@@ -23,15 +23,17 @@ This changes your terminal background color to red if your terminal supports OCS
 
 ## Setup
 
-1. Clone the repository into `~/.dynamic-colors`:
+1. Clone the repository, e.g:
 
-        git clone https://github.com/sos4nt/dynamic-colors ~/.dynamic-colors
+        cd ~/git
+        git clone https://github.com/ceyes/dynamic-colors.git
 
-2. To add the tool to your `PATH` put the following line in your profile (`.bashrc`/`.zshrc`/`.profile`).
+2. Add the tool to your `PATH`, e.g:
 
-        export PATH="$HOME/.dynamic-colors/bin:$PATH"
+        cd ~/bin
+        ln -s ~/git/dynamic-colors/bin/dynamic-colors .
 
-3. For autocompletion add this to your profile (`.bashrc`/`.zshrc`/`.profile`). Change .zsh to .bash for bash environments.
+3. (optional) For autocompletion add this to your profile (`.bashrc`/`.zshrc`/`.profile`). Change .zsh to .bash for bash environments.
 
         source $HOME/.dynamic-colors/completions/dynamic-colors.zsh
 
@@ -45,6 +47,10 @@ List available color schemes:
 Switch to a color scheme:
 
     dynamic-colors switch solarized-dark
+
+Cycle through color schemes:
+
+    dynamic-colors cycle
 
 Reload last color scheme:
 
